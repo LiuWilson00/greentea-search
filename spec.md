@@ -10,7 +10,7 @@ MVP:
 ```mermaid
 
 ---
-title: Animal example
+title: Greentea search
 ---
 flowchart TD
     WWW((WWW))
