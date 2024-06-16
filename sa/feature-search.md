@@ -58,21 +58,7 @@ GREENTEA SEARCH 搜尋功能基於 AI 生成的類別向量計算結果，並將
            "刑法": 0.7,
            "告發": 0.9,
            "台北": 0.9
-         },
-         "results": [
-           {
-             "lawyer_id": 1,
-             "name": "張律師",
-             "specializations": ["刑法", "告發"],
-             "contact_info": "0900-123-456"
-           },
-           {
-             "lawyer_id": 2,
-             "name": "李律師",
-             "specializations": ["刑法", "台北"],
-             "contact_info": "0911-456-789"
-           }
-         ]
+         }
        }
        ```
 
