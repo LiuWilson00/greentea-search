@@ -27,32 +27,31 @@
 
 - **Basic Search API** (`GET /api/search`)
 
-  - 功能：根據用戶輸入的案情進行基本搜索，返回匹配的律師列表。
+  - 功能：根據用戶輸入的案情進行基本搜索，返回匹配的 Token。
   - 對應模組：Search Engine Module
+  - 可以參考 [feature-search](./feature-search.md)
+  - MVP
+
+- **Search Result API** (`GET /api/search/results/{token}`)
+
+  - 功能：根據 Token 回傳律師列表。
+  - 對應模組：Search Engine Module
+  - 可以參考 [feature-search](./feature-search.md)
+  - MVP
 
 - **Chatbot Start API** (`GET /api/chatbot/start`)
 
   - 功能：啟動聊天機器人，引導用戶進行進階搜索。
   - 對應模組：Chatbot Module
+  - 可以參考 [feature-search](feature-advanced-search.md)
+  - MVP
 
-- **Chatbot Input API** (`POST /api/chatbot/input`)
+- **Chatbot Socket** (`ws://{domain}/socket`)
 
   - 功能：接收用戶的初始輸入和詳細輸入，進行初步分類和範圍縮小。
   - 對應模組：Chatbot Module
-
-- **Chatbot Follow-up API** (`POST /api/chatbot/followup`)
-
-  - 功能：根據用戶的回應進一步詢問，直到獲得足夠的信息。
-  - 對應模組：Chatbot Module
-
-- **Chatbot Compile API** (`POST /api/chatbot/compile`)
-
-  - 功能：將用戶的所有回應進行彙整，形成完整的案情描述。
-  - 對應模組：Chatbot Module
-
-- **Search Results API** (`GET /api/search/results`)
-  - 功能：接收搜尋引擎返回的匹配結果，並通過聊天機器人向用戶展示。
-  - 對應模組：Search Engine Module
+  - 可以參考 [feature-search](feature-advanced-search.md)
+  - MVP
 
 ### 律師管理 API
 
